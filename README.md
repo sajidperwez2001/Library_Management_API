@@ -1,9 +1,9 @@
-# Library Management System Web API
+Library Management System Web API
 ===================================
 Please refer src/Library.Api for the API and src/Library.Tests for tests.
-========================================================================
-**High-level Architecture
 
+High-level Architecture
+========================================================================
 API Layer — Controllers
 
 Auth Layer — Authentication & Authorization (JWT token issuance, role claims)
@@ -13,9 +13,9 @@ Service Layer — Business logic
 Data Layer — EF Core DbContext & Repositories
 
 Domain — Entities & DTOs
-================================================
-**Tech Stack
 
+Tech Stack
+================================================
 Language: C#
 
 Framework: ASP.NET Core Web API (net8.0 recommended)
@@ -27,8 +27,9 @@ Database: Microsoft SQL Server
 Auth: JWT (System.IdentityModel.Tokens.Jwt + Microsoft.AspNetCore.Authentication.JwtBearer)
 
 Docs & Testing: Swagger (Swashbuckle), xUnit for unit tests
-============================================================
+
 Notes:
+============================================================
 **Modify DefaultConnection as per your Microsoft SQL Server in appsettings.json
 **Create database
 dotnet ef migrations add InitialCreate
@@ -40,8 +41,9 @@ dotnet build
 dotnet test
 **Run LibraryAPI
 dotnet run --project src\Library.Api
+
+Endpoints:
 ============================================================
-**Endpoints:
 {{baseUrl}}/api/Auth/login
 {{baseUrl}}/api/Auth/register
 {{baseUrl}}/api/Books
