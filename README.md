@@ -138,13 +138,15 @@ to explore and test endpoints directly.
 5. Apply the token to subsequent API requests.
 
 6. Run the requests:
-
+  ```
   Register a User → /api/auth/register
-  
+  ```
+  ```  
   Books API → /api/books (CRUD operations)
-  
+  ```
+  ```  
   Loans API → /api/loans (borrow/return books)
-
+  ```
 ---
 
 ## 🧪 Unit Testing
